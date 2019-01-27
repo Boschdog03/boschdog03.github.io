@@ -5,6 +5,7 @@ div
     font-family:'Oswald',monospace;
     text-align:center;
     margin: 0px;
+    color: #555;
 }
 
 span
@@ -14,7 +15,6 @@ span
 
 .header
 {
-    color: red;
     background-image: url(background.png);
     background-size: 100%;
     padding-bottom: 15vh;
@@ -24,7 +24,6 @@ span
 
 .header h1, h4
 {
-    color: #555;
     text-transform: uppercase;
     line-height: 0;
 }
@@ -51,4 +50,61 @@ span
 {
     text-decoration: none;
     color: #555;
+}
+
+
+
+
+
+.content
+{
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    background-color: #ddd;
+}
+
+.content a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.content a:hover
+{
+    color: #00e1ff;
+}
+
+.content p
+{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 1vw;
+}
+
+.content h1
+{
+    font-size: 3.5vw;
+}
+
+
+
+
+
+.footer
+{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #222;
+    color: #BBB;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer a:hover
+{
+    color: #00e1ff;
 }
