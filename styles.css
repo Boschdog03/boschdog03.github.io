@@ -83,7 +83,19 @@ span
 
 .content h1
 {
-    font-size: 3.5vw;
+    font-size: 5vw;
+}
+
+.Photo_Gallery
+{
+    padding-left: 100px;
+    padding-Right: 100px;
+}
+
+.Photo_Gallery img
+{
+    width: 35vh;
+    border-radius: 5%;
 }
 
 
@@ -96,6 +108,14 @@ span
     padding-bottom: 2vh;
     background-color: #222;
     color: #BBB;
+    line-height: 1vh;
+    font-size: 1vw;
+}
+
+.footer h1
+{
+    line-height: 7vh;
+    font-size: 3vw;
 }
 
 .footer a
