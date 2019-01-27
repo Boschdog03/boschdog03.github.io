@@ -4,7 +4,6 @@ div
 {
     font-family:'Oswald',monospace;
     text-align:center;
-    margin: 0px;
     color: #555;
 }
 
@@ -26,6 +25,7 @@ span
 {
     text-transform: uppercase;
     line-height: 0;
+    transition: opacity 2s ease-in;
 }
 
 .header h1
@@ -59,8 +59,12 @@ span
 .content
 {
     padding-top: 2vh;
-    padding-bottom: 4vh;
-    background-color: #ddd;
+    padding-bottom: 5vh;
+}
+
+#Post:nth-child(odd)
+{
+    background-color: #DDD;
 }
 
 .content a
@@ -88,14 +92,24 @@ span
 
 .Photo_Gallery
 {
-    padding-left: 100px;
-    padding-Right: 100px;
+    padding-left: 12vw;
+    padding-Right: 12vw;
 }
 
 .Photo_Gallery img
 {
     width: 35vh;
+    height: 35vh;
+    object-fit: cover;
     border-radius: 5%;
+    padding: 1vh;
+}
+
+.Photo_Gallery img:hover
+{
+    width: 37vh;
+    height: 37vh;
+    padding: 0vh;
 }
 
 
