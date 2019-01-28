@@ -12,20 +12,114 @@ span
     color:white;
 }
 
-.header
+.background img
 {
-    background-image: url(background.png);
-    background-size: 100%;
-    padding-bottom: 15vh;
-    padding-top: 25vh;
+    display: block;
+    position: fixed;
+    width: 100vw;
+    z-index: -10;
 }
 
 
-.header h1, h4
+
+.Title.Hidden
+{
+    transform: translate3d(0, -20vh, 0);
+    transition: transform 1s ease;
+}
+
+.Title
+{
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    border: 0px;
+    margin: 0px;
+    position: fixed;
+    background-color: #FCFF00;
+    width: 100vw;
+    height: 15vh;
+    z-index: 100;
+    transition: transform 1s ease;
+}
+
+.Title h1
+{
+    display: block;
+    float: left;
+    
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 0px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 2vw;
+    text-transform: uppercase;
+    line-height: 0px;
+}
+
+.Title h4
+{
+    display: block;
+    float: left;
+    clear: left;
+    
+    padding-top: 0px;
+    padding-left: 2vw;
+    line-height: 0px;
+    text-align: left;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+.Title ul
+{
+    list-style: none;
+    
+    display: block;
+    text-align: right;
+    padding-right: 10vw;
+    padding-top: 1vw;
+    padding-left: 
+    text-transform: uppercase;
+    word-spacing: 5vw;
+    font-size: 1.5vw;
+}
+
+.Title li
+{
+    display: inline;
+    padding-left: 2vw;
+    padding-top: 0vw;
+    text-transform: uppercase;
+}
+
+.Title a
+{
+    text-decoration: none;
+    color: #555;
+}
+
+.Title a:hover
+{
+    color: #00E1FF;
+}
+
+
+
+
+
+.header
+{
+    padding-bottom: 30vh;
+    padding-top: 40vh;
+}
+
+.header h1, header h4
 {
     text-transform: uppercase;
     line-height: 0;
-    transition: opacity 2s ease-in;
+    animation: FadeInAndUp 1s 1;
+    animation-fill-mode: both;
 }
 
 .header h1
@@ -36,14 +130,18 @@ span
 .header h4
 {
     font-size: 2vw;
+    animation-delay: .25s;
 }
 
 .header p
 {
-    font-family:'Lobster',monospace; 
+    font-family:'Lobster', 'Oswald',monospace; 
     color: #555;
     line-height: 3;
     font-size: 1vw;
+    animation: FadeInAndUp 1s 1;
+    animation-delay: .5s;
+    animation-fill-mode: both;
 }
 
 .header a
@@ -56,15 +154,36 @@ span
 
 
 
+
 .content
 {
-    padding-top: 2vh;
-    padding-bottom: 5vh;
+    opacity: 1;
+    transform: scale(1, 1  , 1);
+}
+
+.content.margin
+{
+    opacity: 1;
+    transform: scale(1, 1  , 1);
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 
 #Post:nth-child(odd)
 {
     background-color: #EEE;
+}
+
+#Post
+{
+    background-color: white;
+    padding-top: 1vh;
+    padding-bottom: 10vh;
+}
+
+#Gallery
+{
+    background-color: #DDD;
 }
 
 .content a
@@ -92,8 +211,8 @@ span
 
 .Photo_Gallery
 {
-    padding-left: 12vw;
-    padding-Right: 12vw;
+    padding-left: 8vw;
+    padding-Right: 8vw;
 }
 
 .Photo_Gallery img
@@ -103,14 +222,16 @@ span
     object-fit: cover;
     border-radius: 5%;
     padding: 1vh;
+    transition: transform .25s ease;
+    
 }
 
 .Photo_Gallery img:hover
 {
-    width: 37vh;
-    height: 37vh;
-    padding: 0vh;
+    transform: scale3d(1.05, 1.05, 1);
+    transition: transform .25s ease;
 }
+
 
 
 
@@ -141,4 +262,20 @@ span
 .footer a:hover
 {
     color: #00e1ff;
+}
+
+
+
+@keyframes FadeInAndUp
+{
+    from
+    {
+        transform: translate3d(0, 2vw, 0);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
 }

@@ -1,18 +1,56 @@
 <!doctype html>
 <html>
     <head>
-        <title>The Home of Harry Bosch</title>
+        <title>Make Sure You Bring Tacos Next Time</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     
     <body>
+        <div class="Title Hidden" id="title">
+           <h1>Make Sure You Bring Tacos Next Time!</h1>
+            <h4>Gallery</h4>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            
+            
+            function show()
+            {
+                var scrollPos = window.scrollY;
+                var title = document.getElementById("title");
+
+                if (scrollPos > 1000)
+                {
+                    if (title.classList.contains("Hidden")) title.classList.remove('Hidden');
+                }
+                else
+                {
+                    if (!title.classList.contains("Hidden")) title.classList.add('Hidden');
+                }
+                
+                requestAnimationFrame(show);
+            }
+            
+            show();
+            
+        </script>
+        
+        <div class="background">
+            <img src="background.png">
+        </div>
+        
         <div class="header">
             <h1><a href="index.html">Make Sure You Bring Tacos Next Time!</a></h1>
             <h4>Boschdog03 | Papafumprdink</h4>
             <p>The Home of Harry Bosch</p>
         </div>
         
-        <div class="content">
+        <div class="content" id="content">
             <div id="Post">
                 <h1>Hi, I'm Harry, I'm pretty great. Call me XD</h1>
                 <p>Ignoring my bullsh!t, I'm 15, I don't need any more friends so don't even try. I play games, Dosen't mean I'm good at them, I'm still probably better than you but that's beside the point. Math is pretty lit, Logic and Tacos fuel me. Even though I earn $15 bucks a week I'm always broke. I get money from umpiring kids that wouldn't reach my kneecaps kick a soccer ball around. If spell check wasn't a thing, I'd be in jail for underage drinking. I have a computer that's worth more to me than all my friends combined. I hate annoying noises but I'm the largest source of noise pollution.</p>
@@ -66,7 +104,12 @@
             <p><a href="https://www.instagram.com/fumprdinkfolio/" target="_blank">My Instagram Portfolio</a></p>
             <p><a href="https://twitter.com/boschdog03" target="_blank">My Twitter (I dont post on it XP)</a></p>
             <p><a href="https://www.redbubble.com/people/Boschdog03" target="_blank">Redbubble</a></p>
+            <p><a href="mailto:harrybosch03@gmail.com">My Email</a></p>
             <p><a href="https://www.instagram.com/la_mccarthy22/" target="_blank">Follow this Chick, She deserves it ;)</a></p>
         </div>
+        
+        <script>
+        </script>
+        
     </body>
 </html>
