@@ -30,8 +30,8 @@ span
 
 .Title
 {
-    padding-top: 1vh;
-    padding-bottom: 3vh;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
     border: 0px;
     margin: 0px;
     position: fixed;
@@ -48,7 +48,7 @@ span
     float: left;
     
     padding-left: 2vw;
-    padding-top: 2vh;
+    padding-top: 2vw;
     padding-bottom: 0px;
     vertical-align: middle;
     text-align: left;
@@ -80,9 +80,9 @@ span
     display: block;
     text-align: right;
     padding-right: 10vw;
-    padding-top: 1vh;
+    padding-top: 4vw;
     text-transform: uppercase;
-    word-spacing: 5vh;
+    word-spacing: 5vw;
     font-size: 3.5vw;
     vertical-align: middle;
 }
@@ -91,7 +91,7 @@ span
 {
     display: inline;
     padding-left: 2vw;
-    padding-top: 0vh;
+    padding-top: 0vw;
     text-transform: uppercase;
     vertical-align: middle;
 }
