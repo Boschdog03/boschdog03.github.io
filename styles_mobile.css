@@ -16,7 +16,7 @@ span
 {
     display: block;
     position: fixed;
-    width: 100vw;
+    width: 75vh;
     z-index: -10;
 }
 
@@ -24,7 +24,7 @@ span
 
 .Title.Hidden
 {
-    transform: translate3d(0, -20vh, 0);
+    transform: translate3d(0, -40vh, 0);
     transition: transform 1s ease;
 }
 
@@ -37,7 +37,7 @@ span
     position: fixed;
     background-color: #FCFF00;
     width: 100vw;
-    height: 15vh;
+    height: 20vh;
     z-index: 100;
     transition: transform 1s ease;
 }
@@ -48,13 +48,14 @@ span
     float: left;
     
     padding-left: 2vw;
-    padding-top: 2vw;
+    padding-top: 2vh;
     padding-bottom: 0px;
     vertical-align: middle;
     text-align: left;
-    font-size: 2vw;
+    font-size: 3.5vw;
     text-transform: uppercase;
     line-height: 0px;
+    vertical-align: middle;
 }
 
 .Title h4
@@ -67,8 +68,9 @@ span
     padding-left: 2vw;
     line-height: 0px;
     text-align: left;
-    font-size: 1vw;
+    font-size: 2vw;
     text-transform: uppercase;
+    vertical-align: middle;
 }
 
 .Title ul
@@ -78,19 +80,20 @@ span
     display: block;
     text-align: right;
     padding-right: 10vw;
-    padding-top: 1vw;
-    padding-left: 
+    padding-top: 1vh;
     text-transform: uppercase;
-    word-spacing: 5vw;
-    font-size: 1.5vw;
+    word-spacing: 5vh;
+    font-size: 3.5vw;
+    vertical-align: middle;
 }
 
 .Title li
 {
     display: inline;
     padding-left: 2vw;
-    padding-top: 0vw;
+    padding-top: 0vh;
     text-transform: uppercase;
+    vertical-align: middle;
 }
 
 .Title a
@@ -117,19 +120,19 @@ span
 .header h1, header h4
 {
     text-transform: uppercase;
-    line-height: 0;
+    line-height: .3;
     animation: FadeInAndUp 1s 1;
     animation-fill-mode: both;
 }
 
 .header h1
 {
-    font-size: 5vw;
+    font-size: 9vw;
 }
 
 .header h4
 {
-    font-size: 2vw;
+    font-size: 3vw;
     animation-delay: .25s;
 }
 
@@ -138,7 +141,7 @@ span
     font-family:'Lobster', 'Oswald',monospace; 
     color: #555;
     line-height: 3;
-    font-size: 1vw;
+    font-size: 3vw;
     animation: FadeInAndUp 1s 1;
     animation-delay: .5s;
     animation-fill-mode: both;
@@ -201,12 +204,12 @@ span
 {
     padding-left: 20vw;
     padding-right: 20vw;
-    font-size: 1vw;
+    font-size: 4vw;
 }
 
 .content h1
 {
-    font-size: 5vw;
+    font-size: 7vw;
 }
 
 .Photo_Gallery
@@ -250,6 +253,11 @@ span
 .footer h1
 {
     line-height: 7vh;
+    font-size: 6vw;
+}
+
+.footer p
+{
     font-size: 3vw;
 }
 
