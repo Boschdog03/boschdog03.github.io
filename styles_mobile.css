@@ -133,6 +133,8 @@ span
 .header h4
 {
     font-size: 3vw;
+    animation: FadeInAndUp 1s 1;
+    animation-fill-mode: both;
     animation-delay: .25s;
 }
 
@@ -147,10 +149,28 @@ span
     animation-fill-mode: both;
 }
 
+#menu p
+{
+    font-family:'Lobster', 'Oswald',monospace; 
+    color: #00e1ff;
+    line-height: 3;
+    font-size: 3vw;
+    word-spacing: 4vw;
+    animation: FadeInAndUp 1s 1;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+
 .header a
 {
     text-decoration: none;
     color: #555;
+}
+
+.header a:hover
+{
+    text-decoration: none;
+    color: #00e1ff;
 }
 
 
@@ -214,7 +234,7 @@ span
 
 .Photo_Gallery
 {
-    padding-left: 8vw;
+    padding-left: 8ovw;
     padding-Right: 8vw;
 }
 
@@ -271,8 +291,6 @@ span
 {
     color: #00e1ff;
 }
-
-
 
 @keyframes FadeInAndUp
 {
